@@ -12,6 +12,7 @@ class CurrencyRouletteGame(Game):
     def get_money_interval(self):
         usd_random_amount = randint(1, 100)
         # Set Url
+        # This should be a const of the entire currency class.
         url = 'https://v6.exchangerate-api.com/v6/5fc4a1b2d88ef290d6c188bb/latest/USD'
 
         # Get response from API url
