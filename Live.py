@@ -34,6 +34,8 @@ def load_game():
     print("Please choose game difficulty from 1 to 5:")
     print("Enter Selection:")
 
+
+    # I would think about moving difficutly choose to the abstract game class, since its an attribute of a "game"
     # loop for level selection validation (negative if - selection out of range)
     while (True):
         try:
