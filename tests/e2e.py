@@ -16,6 +16,7 @@ def test_scores_service(url):
     else:
         return False
 
+
 def main_function():
     if test_scores_service(url):
         return 0
