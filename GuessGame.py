@@ -1,5 +1,6 @@
 from Game import Game
 from random import randint
+from Utils import clean_screen
 
 
 class GuessGame(Game):
@@ -24,7 +25,6 @@ class GuessGame(Game):
                     break
             except ValueError:
                 print("Must be a number between 1 to %d !!" % self.diff)
-
         return num_from_user
 
     @staticmethod
