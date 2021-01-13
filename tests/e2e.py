@@ -1,5 +1,8 @@
 from selenium import webdriver
 import os
+import sys
+
+
 
 path = os.path.dirname(__file__)
 url = "http://127.0.0.1:8777/"
@@ -19,9 +22,9 @@ def test_scores_service(url):
 
 def main_function():
     if test_scores_service(url):
-        return 0
+        sys.exit(0)
     else:
-        return -1
+        sys.exit(-1)
 
 
 print(main_function())
